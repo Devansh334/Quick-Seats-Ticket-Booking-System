@@ -79,6 +79,7 @@
     String bus_id = (String) session.getAttribute("bus_id");
      String amt = (String)session.getAttribute("amt");
     int id = Integer.parseInt(bus_id);
+    int ts = (int) session.getAttribute("ts");
     int seats = (int) session.getAttribute("avai_seats");
     String bc=" ";
     String bt=" ";
@@ -87,7 +88,8 @@
     int i=1;
     String seattt =" ";
     while(i<=seats){
-            String str="S"+i;
+            String str="S"+ts;
+            ts--;
             seattt=seattt+" "+str;
             l.add(str);
             i++;
