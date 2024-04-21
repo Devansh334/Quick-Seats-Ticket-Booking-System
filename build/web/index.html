@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Added position relative */
+        }
+
+        nav {
+            background-color: #444;
+            
+            overflow: hidden;
+            
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+        }
+
+        .contact-us {
+            margin-top: 40px;
+            text-align: center;
+           
+        }
+
+        /* Added CSS for the logo */
+        .logo {
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            width: 170px; /* Adjust as needed */
+            height: 120px; /* To maintain aspect ratio */
+        }
+        /* Added CSS for the frame around images */
+.frame {
+    border: 2px solid #333;
+    border-radius: 50%;
+    border-color: #3498db;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Added logo -->
+        <img class="logo" src="Images/logo.png" alt="Ticket Booking System Logo">
+        <h1>QUICK SEATS</h1>
+    </header>
+
+    <nav>
+        <a href="admin.html">Admin</a>
+        <a href="agencies.html">Travel Agencies Login</a>
+        <a href="user.html">User Login</a>
+    </nav>
+
+    <main>
+        <p style="text-align: justify; font-family: Georgia; font-size: 20px; ">Welcome To Quick Seats : Your Ultimate Bus Seat Booking Solution. Are you tired of the hassle of standing in long queues or scrambling to book bus tickets at the last minute? Say goodbye to the stress with Quick Seats, your one-stop solution for convenient and efficient bus seat bookings. Whether you're planning a weekend getaway or a daily commute, Quick Seats has got you covered with its user-friendly interface and seamless booking experience.</p>
+    <br><br><br>
+
+    <h2 style="text-align: center;">Meet Our Team</h2><br><br>
+    <div class="team">
+        <div class="team-member">
+            <div class="frame">
+                <img src="Images/compressed.jpg" alt="Team Member 1">
+            </div>
+            <h3>Devansh Goyal</h3>
+            <p>Role: Full Stack Developer</p>
+        </div>
+        <div class="team-member">
+            <div class="frame">
+                <img src="Images/tandon.png" alt="Team Member 2">
+            </div>
+            <h3>Dhruv Tandon</h3>
+            <p>Role: Back-end Developer</p>
+        </div>
+        <div class="team-member">
+            <div class="frame">
+                <img src="Images/baba.jpg" alt="Team Member 3">
+            </div>
+            <h3>Hritik Patel</h3>
+            <p>Role: Full Stack Developer</p>
+        </div>
+        <div class="team-member">
+            <div class="frame">
+                <img src="Images/Bhaiyu.jpg" alt="Team Member 4">
+            </div>
+            <h3>Harsh Patel</h3>
+            <p>Role: Web Designer</p>
+        </div>
+    </div>
+    <br><br><br><hr>
+    
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Please feel free to contact us for any inquiries or assistance.</p>
+        <p>Email: devanshgoyal334@gmail.com</p>
+        <p>Phone: +91-9575802014</p>
+    </div>
+</main>
+    <footer>
+    @2024 Quick Seats . All Rights Reserved
+    </footer>
+</body>
+</html>
+
+

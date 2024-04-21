@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/Bg.png');
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: right;
+        }
+
+        nav a {
+            margin-right: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Add custom font family */
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2181b5;
+        }
+        
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: right;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #3498db;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+    
+    </style>
+</head>
+<body>
+   <!-- <nav>
+        <a href="index.html">Home</a>
+    </nav> -->
+  
+    <form action="Userregister" method="post" onsubmit="return validateForm()">
+        <input type="text" name="name" placeholder="Enter your Name" required><br>
+        <input type="tel" name="mob" id="mob" placeholder="Enter your Contact Number" required><br>
+        <input type="number" min="0" max="120" name="age" placeholder="Enter your age"><br>
+        <input type="email" name="email" placeholder="Enter your Email" required><br>
+        <select name="gender"  required>
+             <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer Not to say">Prefer Not to say</option>
+        </select>
+        
+        <input type="password" name="upass" id="upass" placeholder="Enter your Password " required><br>
+        <input type="password" name="pass" id="pass" placeholder="Confirm Password " required><br>
+        <input type="text" name="add" placeholder="Enter your address"><br>
+        <input type="text" name="city" placeholder="Enter your City"><br>
+        
+        <input type="submit" value="Register"> 
+    </form>
+
+    <script>
+        function validateForm() {
+            var upass = document.getElementById("upass").value;
+            var pass = document.getElementById("pass").value;
+            var mob = document.getElementById("mob").value;
+
+            if (upass !== pass) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            if (mob.length !== 10 || isNaN(mob)) {
+                alert("Contact number should be exactly 10 digits long");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
