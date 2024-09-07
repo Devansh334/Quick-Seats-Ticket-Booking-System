@@ -21,7 +21,7 @@ public class Mailer {
             Session ses = Session.getInstance(p, new javax.mail.Authenticator() {
                 @Override
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("devanshgoyal334@gmail.com", "cwxm fmvd zloj pwhe"); // Insert your password here
+                    return new PasswordAuthentication("devanshgoyal334@gmail.com", "**** app password gmail ****"); // Insert your password here
                 }
             });
 
